@@ -130,7 +130,7 @@ class InventaireController extends Controller
     public function create_inventaire(){
 
 
-        $salle = Salle::all();
+       
 
         $array_table_inventaires = array();
         $array_field_value =array();
@@ -159,7 +159,7 @@ class InventaireController extends Controller
 
             }
 
-        $data = array( 'field_inventaires' => $field_inventaire , 'id_inventaires' => $user->id_choix_inventaire , 'array_table_inventaires' => $array_table_inventaires , 'salles' => $salle , 'name' => $name );
+        $data = array( 'field_inventaires' => $field_inventaire , 'id_inventaires' => $user->id_choix_inventaire , 'array_table_inventaires' => $array_table_inventaires  , 'name' => $name );
         
         return view('inventaire.create_inventaire',$data);
        

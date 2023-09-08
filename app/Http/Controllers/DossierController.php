@@ -1065,6 +1065,7 @@ class DossierController extends Controller
                             "titre" => $titre,
                             "titre_fichier" => $titre_fichier,
                             "user" => $user->identifiant,
+                            
                         ];
                         $titre = "";
 
@@ -1083,6 +1084,7 @@ class DossierController extends Controller
             "all_dossiers" => $all_dossiers,
             "count" => $count_dossier,
             "check_input" => $check_input,
+            "count_dossier" => $count_dossier,
         ];
 
         return Response()->json($data);
