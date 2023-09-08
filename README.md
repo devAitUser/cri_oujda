@@ -1,1 +1,1 @@
-# cri_oujda
+# eej_app
